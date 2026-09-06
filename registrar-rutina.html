@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Rutina - Calisthenics Forum</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header-nav">
+    <a href="dashboard.html" class="logo">Calisthenics Hub</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="ejercicios.html">Ejercicios</a></li>
+        <li><a href="rutinas.html">Rutinas</a></li>
+        <li><a href="index.html" class="btn-logout">Cerrar Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <header class="page-header">
+      <div>
+        <h1>Registrar Nueva Rutina</h1>
+        <p class="page-subtitle">Combina ejercicios registrados para componer una nueva rutina de entrenamiento.</p>
+      </div>
+      <a href="rutinas.html" class="link-back">&larr; Volver a Rutinas</a>
+    </header>
+
+    <section class="form-container">
+      <form action="rutinas.html" method="get">
+        <div class="form-group">
+          <label for="titulo">Nombre de la Rutina</label>
+          <input type="text" id="titulo" class="form-control" placeholder="Ej. Circuito de Empuje Intermedio" required>
+        </div>
+
+        <div class="form-group">
+          <label for="objetivo">Objetivo de la Sesión</label>
+          <select id="objetivo" class="form-control" required>
+            <option value="">Seleccione objetivo</option>
+            <option value="fuerza">Fuerza Máxima</option>
+            <option value="resistencia">Resistencia Muscular</option>
+            <option value="tecnica">Progresiones Estáticas</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="ejercicio-asociado">Ejercicio Principal Asociado (Catálogo)</label>
+          <select id="ejercicio-asociado" class="form-control" required>
+            <option value="">Seleccione el ejercicio ancla</option>
+            <option value="muscleup">Muscle-Up en Barra</option>
+            <option value="dips">Fondos en Paralelas (Dips)</option>
+            <option value="pullups">Dominadas Pronas (Pull-ups)</option>
+            <option value="pistol">Pistol Squat</option>
+            <option value="lsit">L-Sit en Paralelas</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="series">Esquema de Series y Repeticiones</label>
+          <input type="text" id="series" class="form-control" placeholder="Ej. 4 series x 8-10 reps con 90s de descanso" required>
+        </div>
+
+        <div class="form-group">
+          <label for="notas">Recomendaciones y Descansos</label>
+          <textarea id="notas" class="form-control" placeholder="Añade tiempos de calentamiento, aproximación o variantes de escala..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Guardar y Publicar Rutina</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Calisthenics Forum.</p>
+  </footer>
+</body>
+</html>
