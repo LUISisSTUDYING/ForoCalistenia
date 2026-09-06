@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Calisthenics Forum</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header-nav">
+    <a href="dashboard.html" class="logo">Calistenia Tarija</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="ejercicios.html">Ejercicios</a></li>
+        <li><a href="rutinas.html">Rutinas</a></li>
+        <li><a href="index.html" class="btn-logout">Cerrar Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <header class="page-header">
+      <div>
+        <h1>Panel Principal</h1>
+        <p style="color: var(--text-muted);">Bienvenido a la comunidad de calistenia y entrenamiento corporal.</p>
+      </div>
+    </header>
+
+    <section class="dashboard-metrics">
+      <article class="metric-card">
+        <span>Total Ejercicios</span>
+        <h3>28</h3>
+      </article>
+      <article class="metric-card">
+        <span>Rutinas Registradas</span>
+        <h3>12</h3>
+      </article>
+      <article class="metric-card">
+        <span>Nivel de Comunidad</span>
+        <h3>Intermedio</h3>
+      </article>
+      <article class="metric-card">
+        <span>Entrenamientos Hoy</span>
+        <h3>142</h3>
+      </article>
+    </section>
+
+    <section>
+      <h2 style="margin-bottom: 1rem;">Accesos Rápidos</h2>
+      <div class="cards-grid">
+        <article class="item-card">
+          <h2>Catálogo de Ejercicios</h2>
+          <p>Consulta la biblioteca técnica de movimientos corporales por grupo muscular.</p>
+          <a href="ejercicios.html" class="btn btn-primary btn-inline">Ver Ejercicios</a>
+        </article>
+        <article class="item-card">
+          <h2>Registrar Movimiento</h2>
+          <p>Publica un nuevo ejercicio indicando grupo muscular y dificultad.</p>
+          <a href="registrar-ejercicio.html" class="btn btn-primary btn-inline">Nuevo Ejercicio</a>
+        </article>
+        <article class="item-card">
+          <h2>Banco de Rutinas</h2>
+          <p>Explora combinaciones estructuradas compartidas por los atletas.</p>
+          <a href="rutinas.html" class="btn btn-primary btn-inline">Ver Rutinas</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Calisthenics Forum. Proyecto Académico de Frontend.</p>
+  </footer>
+</body>
+</html>
